@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Acadêmica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+        }
+        header img {
+            width: 60px;
+            height: auto;
+        }
+        header h1 {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6e6e6;
+            height: 100px; /* Espaço para o texto */
+        }
+        .text-container p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #004080;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+        section {
+            flex: 1;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="brasao.png" alt="Brasão da Instituição">
+        <h1>Nome da Instituição</h1>
+    </header>
+    <div class="text-container">
+        <p>Bem-vindo à nossa página acadêmica!</p>
+    </div>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="pesquisa.html">Pesquisa</a></li>
+                <li><a href="extensao.html">Extensão</a></li>
+                <li><a href="seminarios.html">Seminários de Pesquisa</a></li>
+                <li><a href="grupo_trabalho.html">Grupo de Trabalho</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+            </ul>
+        </nav>
+        <section>
+            <p>Conteúdo principal aqui.</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Visite nossas páginas do grupo de pesquisa:
+            <a href="https://link-grupo-pesquisa.com" target="_blank">Grupo de Pesquisa</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

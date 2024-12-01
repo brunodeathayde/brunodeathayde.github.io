@@ -31,18 +31,6 @@
             margin-left: 20px;
             font-size: 24px;
         }
-        .text-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #e6e6e6;
-            height: 100px; /* Espaço para o texto */
-        }
-        .text-container p {
-            font-size: 20px;
-            font-weight: bold;
-            color: #004080;
-        }
         main {
             display: flex;
             flex: 1;
@@ -65,8 +53,14 @@
         }
         section {
             flex: 1;
-            padding: 10px;
-            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e6e6e6;
+        }
+        section img {
+            max-width: 90%;
+            height: auto;
         }
         footer {
             background-color: #004080;
@@ -91,9 +85,6 @@
         <img src="brasao.png" alt="Brasão da Instituição">
         <h1>Nome da Instituição</h1>
     </header>
-    <div class="text-container">
-        <p>Bem-vindo à nossa página acadêmica!</p>
-    </div>
     <main>
         <nav>
             <ul>
@@ -105,7 +96,7 @@
             </ul>
         </nav>
         <section>
-            <p>Conteúdo principal aqui.</p>
+            <img src="imagem-central.png" alt="Imagem Central">
         </section>
     </main>
     <footer>

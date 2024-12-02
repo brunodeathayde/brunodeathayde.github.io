@@ -1,2 +1,73 @@
-<link rel="stylesheet" href="style.css">
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #004080;
+    color: white;
+}
+header img {
+    width: 60px;
+    height: auto;
+}
+header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+main {
+    display: flex;
+    flex: 1;
+}
+nav {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+}
+section img {
+    max-width: 90%;
+    height: auto;
+}
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}

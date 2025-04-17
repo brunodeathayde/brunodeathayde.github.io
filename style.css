@@ -1,69 +1,132 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f7fa;
     color: #333;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-top: 40px;
 }
 
+/* Header */
 header {
-    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.title-section {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .university-logo {
     width: 100px;
-    margin-top: 10px;
+    height: auto;
 }
 
+/* Navigation */
 nav {
-    text-align: center;
+    background-color: #2c3e50;
     margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 nav ul li a {
+    color: #ecf0f1;
     text-decoration: none;
-    color: #3366cc;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Main content */
 main section {
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
-h1, h2, h3, h4 {
-    margin: 5px 0;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
     font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title-section {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
 }
